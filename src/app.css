@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --font-rubik: "Rubik", sans-serif;
+  --spacing: 0.25rem;
+  --color-primary: #e67e22;
+  --color-primary-dark: #cf711f;
+  --color-tint-100: #fdf2e9;
+  --color-tint-200: #fae5d3;
+  --color-text-main: #555;
+  --color-text-heading: #444;
+  --color-text-description: #666;
+}
+
+/* 
+  Preserving the 62.5% font-size for easier migration of REM values?
+  Actually, Tailwind works best with standard 16px = 1rem.
+  However, since we are doing a rewrite, we should map existing values to Tailwind classes.
+  If I use standard Tailwind, 9.6rem (96px) becomes 'h-24' (6rem).
+  I will try to use standard Tailwind scale.
+*/
+body {
+  font-family: var(--font-rubik);
+  color: var(--color-text-main);
+  line-height: 1;
+}
