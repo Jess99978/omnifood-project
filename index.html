@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -15,11 +15,7 @@
   </head>
   <body>
     <header class="bg-tint-100 flex justify-between items-center h-24 px-12">
-      <img
-        class="w-[120px] lg:w-[160px]"
-        src="img/omnifood-logo.png"
-        alt="Ominifood logo"
-      />
+      <img class="h-4" src="img/omnifood-logo.png" alt="Ominifood logo" />
       <nav class="hidden md:block">
         <ul
           class="flex items-center gap-4 lg:gap-9 list-none text-base lg:text-lg"
@@ -66,40 +62,73 @@
       </button>
     </header>
     <main>
-      <section class="section-hero">
-        <div class="hero">
-          <div class="hero-text-box">
-            <h1 class="heading-primary">
+      <section class="bg-tint-100 pt-12 pb-24">
+        <div
+          class="grid lg:grid-cols-2 grid-cols-1 max-w-7xl items-center px-5 sm:px-16 lg:px-8 mx-auto gap-12"
+        >
+          <div>
+            <h1 class="font-bold text-3xl md:text-5xl mb-8">
               A healthy meal delivered to your door, every single day
             </h1>
-            <p class="hero-description">
+            <p class="text-base md:text-xl/relaxed mb-6">
               The smart 365-days-per-year food subscription that will make you
               eat healthy again. Tailored to your personal tastes and
               nutritional needs. We have delivered 250,000+ meals last year!
             </p>
-            <a href="#" class="btn btn--full margin-right-sm"
+            <a
+              href="#"
+              class="inline-block text-base md:text-xl font-semibold md:px-8 px-4 md:py-4 py-2 rounded-lg cursor-pointer bg-primary text-white hover:bg-primary-dark active:bg-primary-dark transition-colors duration-300 mr-4"
               >start eating well</a
             >
-            <a href="#" class="btn btn--outline">Learn more &darr;</a>
-            <div class="delivered-meals">
-              <div class="delivered-imgs">
-                <img src="img/customers/customer-1.jpg" alt="Customer photo" />
-                <img src="img/customers/customer-2.jpg" alt="Customer photo" />
-                <img src="img/customers/customer-3.jpg" alt="Customer photo" />
-                <img src="img/customers/customer-4.jpg" alt="Customer photo" />
-                <img src="img/customers/customer-5.jpg" alt="Customer photo" />
-                <img src="img/customers/customer-6.jpg" alt="Customer photo" />
+            <a
+              href="#"
+              class="inline-block text-base md:text-xl font-semibold md:px-8 px-4 md:py-4 py-2 rounded-lg cursor-pointer bg-white text-text-main"
+              >Learn more &darr;</a
+            >
+            <div class="flex flex-col sm:flex-row items-center gap-4 mt-20">
+              <div class="flex shrink-0 items-center">
+                <img
+                  class="w-12 h-12 rounded-full mr-[-16px]"
+                  src="img/customers/customer-1.jpg"
+                  alt="Customer photo"
+                />
+                <img
+                  class="w-12 h-12 rounded-full border-white border-3 mr-[-16px]"
+                  src="img/customers/customer-2.jpg"
+                  alt="Customer photo"
+                />
+                <img
+                  class="w-12 h-12 rounded-full border-white border-3 mr-[-16px]"
+                  src="img/customers/customer-3.jpg"
+                  alt="Customer photo"
+                />
+                <img
+                  class="w-12 h-12 rounded-full border-white border-3 mr-[-16px]"
+                  src="img/customers/customer-4.jpg"
+                  alt="Customer photo"
+                />
+                <img
+                  class="w-12 h-12 rounded-full border-white border-3 mr-[-16px]"
+                  src="img/customers/customer-5.jpg"
+                  alt="Customer photo"
+                />
+                <img
+                  class="w-12 h-12 rounded-full border-white border-3"
+                  src="img/customers/customer-6.jpg"
+                  alt="Customer photo"
+                />
               </div>
-              <p class="deliverd-text">
-                <span>250,000+</span> meals delivered last year
+              <p class="text-md font-bold text-text-main">
+                <span class="text-primary-dark">250,000+</span> meals delivered
+                last year
               </p>
             </div>
           </div>
-          <div class="hero-img-box">
+          <div>
             <img
               src="img/hero.png"
               alt="Woman enjoying food, meals in storage container, and food bowls on a table"
-              class="hero-img"
+              class="w-full"
             />
           </div>
         </div>
